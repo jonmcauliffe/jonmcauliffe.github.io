@@ -9,6 +9,8 @@
     img   { vertical-align: top; border: 0; }
     table { border-collapse: collapse; border-spacing: 0; }
     td    { padding: 0; }
+    /* layout images must be block so they don't inherit line-box height from line-height */
+    td > img, td > a > img { display: block; }
     /* nav button rollovers (replaces the original ImageReady JS) */
     a.navbtn[href="#contact"]:hover      img { content: url("images/contact-over.gif"); }
     a.navbtn[href="#research"]:hover     img { content: url("images/research-over.gif"); }
